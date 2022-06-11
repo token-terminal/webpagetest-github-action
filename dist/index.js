@@ -151,6 +151,7 @@ async function run() {
   }
   if (pingback) {
     options.pingback = pingback;
+    delete options.pollResults;
   }
 
   core.startGroup("WebPageTest Configuration");
